@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mHN-PH-nfw">
+                                <rect key="frame" x="0.0" y="44" width="428" height="517"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="517" id="EKQ-kA-3OY"/>
+                                </constraints>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add annotation title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-sB-GJ5">
+                                <rect key="frame" x="20" y="577" width="197" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="nID-hH-79r"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I5E-sB-GJ5" secondAttribute="trailing" constant="211" id="1SN-x7-0qo"/>
+                            <constraint firstItem="mHN-PH-nfw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3H6-LB-qpf"/>
+                            <constraint firstItem="I5E-sB-GJ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P6x-Bn-wik"/>
+                            <constraint firstItem="I5E-sB-GJ5" firstAttribute="top" secondItem="mHN-PH-nfw" secondAttribute="bottom" constant="16" id="T5A-tz-tsJ"/>
+                            <constraint firstItem="mHN-PH-nfw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kfv-rp-RqQ"/>
+                            <constraint firstItem="mHN-PH-nfw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wPN-hh-AzO"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Og4-JP-Y79" appends="YES" id="TjL-bB-2UO"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="addTitle" destination="I5E-sB-GJ5" id="cqz-IV-ixJ"/>
+                        <outlet property="map" destination="mHN-PH-nfw" id="vhZ-kG-btl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Og4-JP-Y79">
+                    <connections>
+                        <action selector="longPressed:" destination="BYZ-38-t0r" id="9Fv-i6-ZkY"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="138.78504672897196" y="105.61555075593954"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
