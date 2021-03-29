@@ -21,6 +21,22 @@ class ViewControllerAdd: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm E, d MMM y"
         fS.addReminder(title: titleInput.text!, description: descriptionInput.text!, date: dateFormatter.string(from: dateInput.date))
-    }
+    
+        //CREATING A NOTIFICATION
+        let content = UNMutableNotificationContent()
+        content.title = titleInput.text!
+        content.sound = .default
+        content.body = descriptionInput.text!
+        let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second],
+                                                                                                  from: dateInput.date), repeats: false)
+        let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
+            if error != nil {
+                print("something went wrong")
+            } else {
+                print("notification created...")
+            }
+        })
+}
     
 }

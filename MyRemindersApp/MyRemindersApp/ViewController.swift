@@ -39,16 +39,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        print("edit called \(indexPath.row)")
         fS.deleteReminder(index: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .fade)
     }
     
     var editIndex = 0
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("you clicked on row \(indexPath.row)")
         editIndex = indexPath.row
     
-    }    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ViewControllerDetails{
+            dest.currentIndex = tableView.indexPathForSelectedRow?.row ?? 0
+            dest.parent_view_controller = self
+        }
+    }
 }
 

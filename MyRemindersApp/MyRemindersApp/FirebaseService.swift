@@ -33,7 +33,7 @@ class FirebaseService {
                 if let e = err {
                     print("error deleting \(docID) \(e)")
                 }else {
-                    print("ok deleting \(docID)")
+                    print("ok deleting")
                 }
             }
             reminders.remove(at: index)

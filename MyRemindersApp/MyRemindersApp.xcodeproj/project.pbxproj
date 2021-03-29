@@ -18,6 +18,7 @@
 		D3ACF125260E015D00F610F4 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ACF124260E015D00F610F4 /* FirebaseService.swift */; };
 		D3ACF128260E019C00F610F4 /* Updateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ACF127260E019C00F610F4 /* Updateable.swift */; };
 		D3ACF12B260E0AD100F610F4 /* ViewControllerAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ACF12A260E0AD100F610F4 /* ViewControllerAdd.swift */; };
+		D3CC43982611D9A400E75AD1 /* ViewControllerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC43972611D9A400E75AD1 /* ViewControllerDetails.swift */; };
 		EF453F604150D3AAECEE1822 /* Pods_MyRemindersApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F97304F05E33141BE011E /* Pods_MyRemindersApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		D3ACF124260E015D00F610F4 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		D3ACF127260E019C00F610F4 /* Updateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updateable.swift; sourceTree = "<group>"; };
 		D3ACF12A260E0AD100F610F4 /* ViewControllerAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAdd.swift; sourceTree = "<group>"; };
+		D3CC43972611D9A400E75AD1 /* ViewControllerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetails.swift; sourceTree = "<group>"; };
 		DF8D1999A51AFE5393315B36 /* Pods-MyRemindersApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRemindersApp.debug.xcconfig"; path = "Target Support Files/Pods-MyRemindersApp/Pods-MyRemindersApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				D3ACF0F7260DF6B000F610F4 /* SceneDelegate.swift */,
 				D3ACF0F9260DF6B000F610F4 /* ViewController.swift */,
 				D3ACF12A260E0AD100F610F4 /* ViewControllerAdd.swift */,
+				D3CC43972611D9A400E75AD1 /* ViewControllerDetails.swift */,
 				D3ACF124260E015D00F610F4 /* FirebaseService.swift */,
 				D3ACF127260E019C00F610F4 /* Updateable.swift */,
 				D3ACF0FB260DF6B000F610F4 /* Main.storyboard */,
@@ -232,6 +235,7 @@
 				D3ACF0FA260DF6B000F610F4 /* ViewController.swift in Sources */,
 				D3ACF125260E015D00F610F4 /* FirebaseService.swift in Sources */,
 				D3ACF0F6260DF6B000F610F4 /* AppDelegate.swift in Sources */,
+				D3CC43982611D9A400E75AD1 /* ViewControllerDetails.swift in Sources */,
 				D3ACF12B260E0AD100F610F4 /* ViewControllerAdd.swift in Sources */,
 				D3ACF0F8260DF6B000F610F4 /* SceneDelegate.swift in Sources */,
 				D3ACF128260E019C00F610F4 /* Updateable.swift in Sources */,
