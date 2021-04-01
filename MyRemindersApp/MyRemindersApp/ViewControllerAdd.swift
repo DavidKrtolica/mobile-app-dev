@@ -22,7 +22,7 @@ class ViewControllerAdd: UIViewController {
         dateFormatter.dateFormat = "HH:mm E, d MMM y"
         fS.addReminder(title: titleInput.text!, description: descriptionInput.text!, date: dateFormatter.string(from: dateInput.date))
     
-        //CREATING A NOTIFICATION
+        //CREATING A NOTIFICATION - NOT FUNCTIONAL
         let content = UNMutableNotificationContent()
         content.title = titleInput.text!
         content.sound = .default

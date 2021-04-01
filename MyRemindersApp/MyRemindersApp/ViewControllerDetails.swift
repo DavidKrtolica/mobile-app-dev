@@ -21,6 +21,9 @@ class ViewControllerDetails: UIViewController {
         titleEdit.text = fS.reminders[currentIndex].title
         descriptionEdit.text = fS.reminders[currentIndex].description
         dateString.text = fS.reminders[currentIndex].date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm E, d MMM y"
+        dateEdit.date = dateFormatter.date(from: fS.reminders[currentIndex].date)!
     }
     
     @IBAction func updateReminder(_ sender: UIButton) {
