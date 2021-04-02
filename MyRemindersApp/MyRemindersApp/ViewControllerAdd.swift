@@ -43,6 +43,8 @@ class ViewControllerAdd: UIViewController {
                 }
             })
         }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

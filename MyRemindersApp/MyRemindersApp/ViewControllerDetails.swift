@@ -30,6 +30,7 @@ class ViewControllerDetails: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm E, d MMM y"
         fS.updateReminder(index: currentIndex, title: titleEdit.text!, description: descriptionEdit.text!, date: dateFormatter.string(from: dateEdit.date))
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
